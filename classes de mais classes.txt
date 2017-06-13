@@ -1,0 +1,17 @@
+
+Classes de Mais Classe
+
+Queremos que nossas classes façam mais do que... bem, nada, então temos que substituir pass por alguma coisa.
+
+Você pode ter notado em nosso exemplo do primeiro exercício que começamos nossa definição de classe com uma função um pouco estranha: __init__(). Esta função é necessária para classes, e é usada para inicializar os objetos que cria. __init__() sempre toma pelo menos um argumento, self, que referencia o objeto sendo criado. Você pode em __init__() como a função que "inicializa" cada objeto que a classe cria.
+
+
+Não Vamos Ser Muito Egoístas
+
+Excelente! Vamos fazer mais um ajuste em nossa definição de classe, então avançar e instanciar (criar) nosso primeiro objeto.
+
+Até agora, __init__() toma apenas um parâmetro: self. Isto é uma convenção do Python; não há nada de mágico na palavra self. Entretanto, é extremamente comum usar self como primeiro parâmetro em __init__(), então você deve fazer isso, para que outras pessoas entendam seu código.
+
+A parte que é mágica é o fato de que self é o primeiro parâmetro passado para __init__(). O Python usará o primeiro parâmetro que __init__() recebe para se referir ao objeto sendo criado; é por isso que muitas vezes ele é chamado self ("eu mesmo", em tradução livre), já que este parâmetro dá ao objeto sendo criado sua identidade.
+
+

@@ -1,0 +1,20 @@
+
+Funções Anônimas
+
+Um dos aspectos mais poderosos do Python é que ele permite um estilo de programação chamado programação funcional, o que significa que você pode passar funções como se elas fossem variáveis ou valores. Às vezes achamos que isso é garantido, mas nem todas as linguagens permitem isso!
+
+Verifique seu código à direita. Vê o trecho sobre lambda? Digitando
+
+lambda x: x % 3 == 0
+
+Is the same as
+
+def by_three(x):
+    return x % 3 == 0
+
+Só que não precisamos realmente nomear a função; ela faz seu trabalho e retorna um valor mesmo sem um. É por isso que a função que o lambda cria é uma função anônima.
+
+Quando passamos lambda para filter, filter usa lambda para determinar o que filtrar, e o segundo argumento (my_list, que são apenas os números 0 – 15) é a lista que é filtrada.
+
+my_list = range(16)
+print filter(lambda x: x % 3 == 0, my_list)

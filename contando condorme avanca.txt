@@ -1,0 +1,15 @@
+
+Contando conforme avança
+
+Uma desvantagem de usar este estilo de iteração for-cada é que você não sabe o índice do que está examinando. Geralmente, isso não é um problema, mas às vezes é útil saber em que ponto da lista você está. Felizmente, a função embutida enumerate nos ajuda com isso.
+
+enumerate funciona fornecendo um índice correspondente a cada elemento na lista que você está percorrendo. Sempre que você passa pelo laço, index seá incrementado um um, e item será o próximo item na sequência. É muito similar a usar um laço for normal com uma lista, exceto que isso nos dá um modo fácil de contar quantos itens vimos até agora.
+Instruções
+
+Não queremos ver os itens listados a partir do índice 0, já que isso parece pouco natural. Em vez disso, os itens devem parecer começar no índice 1. Modifique a declaração print para refletir esse comportamento. Leia a Dica para ajudar.
+
+choices = ['pizza', 'massa', 'salada', 'nachos']
+
+print 'Suas opcoes sao:'
+for index, item in enumerate(choices):
+    print index + 1, item
